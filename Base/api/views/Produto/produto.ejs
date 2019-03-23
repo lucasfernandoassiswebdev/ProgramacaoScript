@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Produto</title>
+
+    <style>
+        .formulario {
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            margin: auto;
+            width: 350px;
+            height: 250px;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: white;
+        }
+
+        .corpo {
+            background-color: indianred;
+        }
+
+        .campoFormulario {
+            margin-top: 10px;
+        }
+
+        .center-button {
+            position: relative;
+            margin: auto;
+            width: 20%;
+            margin-left: 40%;
+            background-color: white;
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body class="corpo">
+    <form class="formulario">
+        <div class="campoFormulario">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="campoFormulario">
+            <label for="valor">Valor R$:</label>
+            <input type="number" name="valor" id="valor">
+        </div>
+
+        <div class="campoFormulario">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" name="quantidade" id="quantidade">
+        </div>
+
+        <div class="campoFormulario">
+            <label for="marcas">Marca:</label>
+            <select name="marcas" id="marcas">
+                <option value="volvo">Adidas</option>
+                <option value="saab">Nike</option>
+                <option value="fiat">Double G</option>
+                <option value="audi">Olympikus</option>
+            </select>
+        </div>
+
+        <div class="campoFormulario">
+            <label for="tipo">Tipo:</label><br />
+            <input type="radio" name="tipo" value="male" checked> Skate
+            <input type="radio" name="tipo" value="female"> Caminhada
+            <input type="radio" name="tipo" value="female"> Basquete<br />
+            <input type="radio" name="tipo" value="female"> Chuteira
+            <input type="radio" name="tipo" value="other"> Sandália
+            <input type="radio" name="tipo" value="other"> Outro
+        </div>
+
+        <br /><br />
+        <button class="center-button">Cadastrar</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Especie</title>
+
+    <style>
+        .formulario {
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            margin: auto;
+            width: 350px;
+            height: 250px;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .corpo {
+            background-color: lightblue;
+        }
+
+        .campoFormulario {
+            margin-top: 10px;
+        }
+
+        .center-button {
+            position: relative;
+            margin: auto;
+            width: 20%;
+            margin-left: 40%;
+            background-color: limegreen;
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body class="corpo">
+    <form class="formulario" action="/cadastro" method="POST">
+        <div class="campoFormulario">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="campoFormulario">
+            <label for="altura">Altura/Cumprimento:</label>
+            <input type="number" name="altura" id="altura">
+        </div>
+
+        <div class="campoFormulario">
+            <label for="tipo">Tipo:</label>
+            <select name="tipo" id="tipo">
+                <option value="mamifero">Mamífero</option>
+                <option value="reptil">Réptil</option>
+                <option value="ave">Ave</option>
+                <option value="anfibio">Anfíbio</option>
+                <option value="inseto">Inseto</option>
+                <option value="aracnideo">Aracnídeo</option>
+            </select>
+        </div>
+
+        <div class="campoFormulario">
+            <label for="extinto">Extinto:</label><br />
+            <input type="radio" name="extinto" value="sim" checked> Sim
+            <input type="radio" name="extinto" value="nao"> Não
+        </div>
+
+        <br /><br />
+        <button class="center-button" type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
