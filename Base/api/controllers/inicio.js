@@ -11,7 +11,7 @@ module.exports = {
 
 
 function index(req, res) {
-  res.render('../views/inicio/index.ejs', { title: 'Estágio', nome: 'Lucas' });
+  res.render('../views/inicio/index.ejs', { title: 'Estágio'});
 }
 
 function login(req, res) {
