@@ -31,6 +31,7 @@ CREATE  TABLE IF NOT EXISTS `dados191n`.`Editoras` (
   `edtEstado` CHAR(2) NULL ,
   `edtEmail` VARCHAR(40) NULL ,
   `edtTelefone` VARCHAR(15) NULL ,
+  `edtCep` VARCHAR(10) NULL ,
   PRIMARY KEY (`edtCodigo`) )
 ENGINE = InnoDB;
 
@@ -44,6 +45,7 @@ CREATE  TABLE IF NOT EXISTS `dados191n`.`Livro` (
   `livTituloLivro` VARCHAR(50) NULL ,
   `livEdicao` VARCHAR(10) NULL ,
   `livAno` DECIMAL(10,0) NULL ,
+  `livIsbn` VARCHAR(20) NULL ,
   `autCodigo` INT NOT NULL ,
   `edtCodigo` INT NOT NULL ,
   PRIMARY KEY (`livCodigo`) ,
